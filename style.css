@@ -10,7 +10,8 @@
 }
 
 nav {
-  height: 80px;
+  /* height: 80px; */
+  width: 100%;
   background-color: #28293e;
   display: flex;
   align-items: center;
@@ -100,6 +101,53 @@ nav .menu-btn i {
   padding-bottom: 100px;
 }
 
+/* .bulid-section */
+.bulid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* footer design area  */
+footer {
+  background-color: rgba(0, 0, 0, 0.767);
+  padding: 50px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-section {
+  text-align: center;
+  color: #fff;
+}
+.footer-section h5 {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+}
+.footer-section h6 {
+  color: #ef6d58;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  display: block;
+}
+
 /* nav responsive query  */
 
 @media (max-width: 940px) {
@@ -131,6 +179,11 @@ nav .menu-btn i {
   }
   nav button {
     display: none;
+  }
+  .service-section,
+  .about-section,
+  .bulid-section {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
